@@ -1,0 +1,29 @@
+POST http://localhost:3333/summarization
+Content-Type: application/json
+
+{
+	"title": "id4",
+	"link" : "test23",
+	"startAt": 60,
+	"endAt": 300
+}
+
+###
+GET http://localhost:3333/summarizations
+
+###
+GET http://localhost:3333/summarizations?search=id4
+
+###
+
+PUT http://localhost:3333/summarization/9e937d34-f462-4597-9200-b679c4d58db8
+Content-Type: application/json
+
+{
+	"title" : "testzin novo",
+	"link" : "John Kennedy, mais novo"
+}
+
+###
+
+DELETE http://localhost:3333/summarization/32a692a1-840b-4e84-885a-ccadea30a791
